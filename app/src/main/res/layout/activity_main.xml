@@ -11,35 +11,40 @@
     tools:context="com.tommyputranto.kotlin.MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/number_txt"
-            android:textSize="50sp"
-            android:text="0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="50sp" />
+
         <Button
             android:id="@+id/plus_one"
-            android:text="+1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="+1" />
+
         <Button
             android:id="@+id/plus_two"
-            android:text="+2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="+2" />
+
         <Button
             android:id="@+id/plus_three"
-            android:text="+3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="+3" />
+
         <Button
             android:id="@+id/reset"
-            android:text="reset"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="reset" />
     </LinearLayout>
 </RelativeLayout>
