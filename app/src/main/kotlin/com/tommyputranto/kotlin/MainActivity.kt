@@ -11,12 +11,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     var number : Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         logic()
     }
     fun logic(){
+
         plus_one.setOnClickListener {
             number  = number + 1
             setNumberToText(""+number)
@@ -32,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         reset.setOnClickListener {
             number = 0
             setNumberToText(""+number)
+        }
+        detail.setOnClickListener {
+            startActivity(Intent(this, DetailActivity::class.java).apply {
+                putExtra("data",""+number)
+            })
         }
     }
     fun setNumberToText(number: String){
